@@ -91,10 +91,15 @@ available_models = [
     "topicfm-plus",
     "silk",
     "zippypoint",
-    "xfeat-steerers-perm",
-    "xfeat-steerers-learned",
-    "xfeat-star-steerers-perm",
-    "xfeat-star-steerers-learned",
+    "sift-mambaglue",
+    "superpoint-mambaglue",
+    "disk-mambaglue",
+    "aliked-mambaglue",
+    "doghardnet-mambaglue",
+    # "xfeat-steerers-perm",  # Temporarily commented as weights are no longer available
+    # "xfeat-steerers-learned",
+    # "xfeat-star-steerers-perm",
+    # "xfeat-star-steerers-learned",
 ]
 
 
@@ -364,6 +369,31 @@ def get_matcher(
         from vismatch.im_models import silk
 
         return silk.SilkMatcher(device, *args, **kwargs)
+
+    elif matcher_name == "sift-mambaglue":
+        from vismatch.im_models import mambaglue
+
+        return mambaglue.SiftMambaGlue(device, max_num_keypoints, *args, **kwargs)
+
+    elif matcher_name == "superpoint-mambaglue":
+        from vismatch.im_models import mambaglue
+
+        return mambaglue.SuperpointMambaGlue(device, max_num_keypoints, *args, **kwargs)
+
+    elif matcher_name == "disk-mambaglue":
+        from vismatch.im_models import mambaglue
+
+        return mambaglue.DiskMambaGlue(device, max_num_keypoints, *args, **kwargs)
+
+    elif matcher_name == "aliked-mambaglue":
+        from vismatch.im_models import mambaglue
+
+        return mambaglue.AlikedMambaGlue(device, max_num_keypoints, *args, **kwargs)
+
+    elif matcher_name == "doghardnet-mambaglue":
+        from vismatch.im_models import mambaglue
+
+        return mambaglue.DognetMambaGlue(device, max_num_keypoints, *args, **kwargs)
 
     elif matcher_name == "omniglue":
         from vismatch.im_models import omniglue

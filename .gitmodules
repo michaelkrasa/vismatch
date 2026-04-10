@@ -90,3 +90,7 @@
 [submodule "vismatch/third_party/UFM"]
 	path = vismatch/third_party/UFM
 	url = https://github.com/alexstoken/UFM.git
+
+[submodule "vismatch/third_party/MambaGlue"]
+	path = vismatch/third_party/MambaGlue
+	url = https://github.com/url-kaist/MambaGlue

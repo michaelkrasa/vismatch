@@ -186,6 +186,13 @@ Most models can run on both CPU and GPU. If a runtime shows ❌, that model cann
       <td>2.828 / 8.852 / 8.100 / 8.128</td>
     </tr>
     <tr>
+      <td>MambaGlue* (ICRA '25)</td>
+      <td><a href="https://github.com/url-kaist/MambaGlue">Official</a></td>
+      <td><a href="https://arxiv.org/abs/2502.00462">arxiv</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
       <td colspan="5" align="center"><strong>2022</strong></td>
     </tr>
     <tr>
@@ -299,6 +306,8 @@ Runtime benchmark is the average of 5 iterations over the 5 pairs of examples in
 \* `GIM` model runtimes are listed in the order: `LG, DKMv3`
 
 \* `LightGlue` model runtimes are listed in the order: `SIFT, SuperPoint, Disk, ALIKED`
+
+\* `MambaGlue` model runtimes are listed in the order: `SIFT, SuperPoint, Disk, ALIKED, DoGHardNet`
 
 \* `Keypt2Subpx` model runtimes are listed in the order: `superpoint-lightglue, aliked-lightglue, xfeat, dedode`
 

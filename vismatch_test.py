@@ -25,6 +25,11 @@ EXCLUDED_MATCHERS = [
     "sift-sphereglue",  # requires torch-geometric, torch-cluster (also can't be tested on homography)
     "superpoint-sphereglue",  # requires torch-geometric, torch-cluster (also can't be tested on homography)
     "zippypoint",  # requires tensorflow>=2.15,<2.16, keras<3, larq>=0.12.2
+    "sift-mambaglue",  # requires mamba-ssm / CUDA build toolchain
+    "superpoint-mambaglue",  # requires mamba-ssm / CUDA build toolchain
+    "disk-mambaglue",  # requires mamba-ssm / CUDA build toolchain
+    "aliked-mambaglue",  # requires mamba-ssm / CUDA build toolchain
+    "doghardnet-mambaglue",  # requires mamba-ssm / CUDA build toolchain
 ]
 
 
